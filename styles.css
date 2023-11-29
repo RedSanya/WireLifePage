@@ -88,10 +88,10 @@ aside{
 .noticia-text{
    max-height: 0px;
    overflow: hidden;
-   transition: all 0.33s ease;
+   transition: max-height 0.33s ease;
 }
 .noticia-text:target{
-   max-height: none;
+   max-height: 350px;
    background-color: hsl(243, 29%, 36%, 60%);
    border-radius: 0.25rem;
 }
