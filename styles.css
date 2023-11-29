@@ -91,7 +91,7 @@ aside{
    transition: all 0.33s ease;
 }
 .noticia-text:target{
-   max-height: none;
+   max-height: 300px;
    background-color: hsl(243, 29%, 36%, 60%);
    border-radius: 0.25rem;
 }
