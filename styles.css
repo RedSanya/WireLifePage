@@ -28,6 +28,10 @@ header,footer{
 }
 .menu{
    background-color: #d1010a;
+   position: fixed;
+   width: 100%;
+   top:0;
+   z-index: 1000;
 }
 header ul{
    padding: 0;
@@ -44,6 +48,7 @@ header ul li a:hover{
    border-radius: 0.4rem;
 }
 main{
+   margin-top: /*4rem*/56px;/*altura de header*/
    padding: 1.25rem;
 
    flex: 1;
