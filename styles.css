@@ -1,0 +1,273 @@
+html{
+   margin: 0;
+   padding: 0;
+   font-size: 100%;
+   font-family: 'Oswald', sans-serif;
+}
+body{
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   background-color: rgb(19, 3, 3);
+   color: #eeeeee;
+}
+a{
+   text-decoration: none;
+   color: inherit;
+}
+header, main, footer{
+   box-sizing: border-box;
+   box-shadow: 0 0 0.25rem;
+}
+header,footer{
+   text-align: center;
+   color: #eeeeee;
+   min-height: 3rem;
+}
+.menu{
+   background-color: #d1010a;
+}
+header ul{
+   padding: 0;
+   list-style: none;
+   display: flex;
+   justify-content: center;
+}
+header ul li a{
+   padding: 0.65rem 1.5rem;
+   transition: 0.2s linear;
+}
+header ul li a:hover{
+   background-color: #f5000d;
+   border-radius: 0.4rem;
+}
+main{
+   padding: 1.25rem;
+
+   flex: 1;
+   display: flex;
+   justify-content: space-between;
+}
+main section{
+   flex: 3;
+}
+
+footer{
+   background-color: #000000;
+}
+
+/*--------------- Aside con noticias ----------------*/
+aside{
+   background-color: #320021;
+   margin-left: 1rem;
+   padding: 0.75rem;
+   border-radius: 0.25rem;
+   box-shadow: 0 0 0.1rem;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+
+   flex: 1;
+}
+.card-noticia{
+   width: 85%;
+   margin: 0.3rem 0;
+   padding: 0.45rem;
+   box-shadow: 0 0 0.15rem;
+
+}
+.noticia-text{
+   max-height: 0px;
+   overflow: hidden;
+   transition: all 0.33s ease;
+}
+.noticia-text:target{
+   max-height: none;
+   background-color: hsl(243, 29%, 36%, 60%);
+   border-radius: 0.25rem;
+}
+
+/*-------------- Contactar ---------------*/
+#contactar form{
+   display: flex;
+   justify-content: center;
+}
+#contactar fieldset{
+   display: flex;
+   flex-direction: column;
+   background-image: url(img/retroBG2.jpg);
+   background-repeat: no-repeat;
+   background-size:cover;
+   width: 60%;
+}
+#contactar label{
+   color: #eeeeee;
+}
+#contactar input, textarea{
+   display: block;
+   margin: 0.3rem 0 0.75rem 0;
+   border-radius: 0.2rem;
+   width: 80%;
+   height: 1.5rem;
+}
+#contactar input, textarea{
+   align-self: center;
+}
+#contactar textarea{
+   height: 5rem;
+}
+#contactar input[type="submit"]{
+   background-color: #d1010a;
+   color: #eeeeee;
+   padding: 0.5rem;
+   font-size: 1rem;
+   width: 30%;
+   height: auto;
+   transition: 0.3s linear;
+   border-color: #444176;
+   border-radius: 0.75rem;
+}
+#contactar input[type="submit"]:hover{
+   background-color: #6a0042;
+   cursor: pointer;
+   transform: scale(1.2);
+}
+
+/*----------Catalogo----------------*/
+#main-catalogo{
+   display: block;
+}
+#catalogo{
+   padding: 1.5rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+#catalogo .card{
+   width: 30%;
+   height: auto;
+   box-shadow: 0 0 0.15rem;
+   padding: 0.75rem;
+   margin: 0.5rem;
+   transition: 0.2s ease-in-out;
+   overflow: hidden;
+}
+#catalogo .card:hover{
+   cursor: pointer;
+   transform: scale(1.02);
+}
+#catalogo .card-header{
+   height: 65%;
+}
+#catalogo .card-header img{
+   width: 100%;
+   height: 100%;
+}
+
+/*---------- Cesta ------------*/
+#cesta{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.cesta-card{
+   display: flex;
+   width: 80%;
+}
+.card-img{
+   width: 30%;
+}
+.card-img img{
+   width: 100%;
+   height: 100%;
+}
+.card-description{
+   padding: 1rem;
+}
+#cesta button{
+   margin: 1.5rem 0;
+   color: inherit;
+   padding: 0.75rem;
+   background-color: #444176;
+   border-radius: 0.75rem;
+   transition: 0.2s linear;
+   font-size: 1.25rem;
+}
+#cesta button:hover{
+   transform: scale(1.1);
+   background-color: #d1010a;
+   cursor: pointer;
+}
+
+/*---------- Producto ----------*/
+.producto{
+   display: flex;
+   width: 70%;
+   height: 30%;
+   margin-top: 2rem;
+   overflow: hidden;
+}
+.images{
+   width: 30%;
+   padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.main-image{
+   height: 75%;
+}
+.list-images{
+   height: 15%;
+   display: flex;
+   justify-content: space-around;
+}
+.list-images a{
+   padding: 0.3rem;
+}
+.producto img{
+   width: 100%;
+   height: 100%;
+}
+.details{
+   display: flex;
+}
+.details .description, .buybox{
+   padding: 0.75rem;
+}
+.buybox{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   box-shadow: 0 0 0.1rem;
+}
+.precio{
+   color: #f5000d;
+   font-size: 1.5rem;
+}
+.precio .off{
+   color: yellow;
+   text-decoration: line-through;
+}
+.buybox p span{
+   color: #d1010a;
+}
+.buybox button{
+   background-color: yellow;
+   border-radius: 0.75rem;
+   border: none;
+   font-size: 1rem;
+   padding: 0.5rem;
+
+   transition: transform 0.2s ease-in-out;
+}
+.buybox button:hover{
+   cursor: pointer;
+   transform: scale(1.1);
+   background-color: #d1010a;
+   color: #eeeeee;
+}
