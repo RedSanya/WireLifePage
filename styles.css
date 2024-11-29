@@ -2,7 +2,7 @@ html{
    margin: 0;
    padding: 0;
    font-size: 100%;
-   font-family: 'Oswald', sans-serif;
+   font-family: 'Roboto', sans-serif;
 }
 body{
    margin: 0;
@@ -10,12 +10,18 @@ body{
    display: flex;
    flex-direction: column;
    min-height: 100vh;
-   background-color: rgb(19, 3, 3);
-   color: #eeeeee;
+   background-color: #F7F7F7;
+   color: #333333;
 }
 a{
    text-decoration: none;
    color: inherit;
+}
+h1{
+   font-size: 1.75rem;
+}
+h4{
+   font-size: 1.5rem;
 }
 header, main, footer{
    box-sizing: border-box;
@@ -27,7 +33,7 @@ header,footer{
    min-height: 3rem;
 }
 .menu{
-   background-color: #d1010a;
+   background-color: #FF6B6B;
    position: fixed;
    width: 100%;
    top:0;
@@ -42,9 +48,10 @@ header ul{
 header ul li a{
    padding: 0.65rem 1.5rem;
    transition: 0.2s linear;
+   /* background-color: #F5F5F5; */
 }
 header ul li a:hover{
-   background-color: #f5000d;
+   background-color: #e94141;
    border-radius: 0.4rem;
 }
 main{
@@ -60,16 +67,17 @@ main section{
 }
 
 footer{
-   background-color: #000000;
+   background-color: #2C3E50;
 }
 
 /*--------------- Aside con noticias ----------------*/
 aside{
-   background-color: #320021;
+   background-color: #2C3E50;
    margin-left: 1rem;
    padding: 0.75rem;
-   border-radius: 0.25rem;
-   box-shadow: 0 0 0.1rem;
+   border-radius: 0.5rem;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+   color: #FFFFFF;
 
    display: flex;
    flex-direction: column;
@@ -83,17 +91,30 @@ aside{
    margin: 0.3rem 0;
    padding: 0.45rem;
    box-shadow: 0 0 0.15rem;
-
+   border-radius: 15px;
+}
+.card-noticia a{
+   color: #2ECC71; /* Verde vibrante */
+   font-weight: bold;
+   text-decoration: none;
+}
+.card-noticia a:hover{
+   text-decoration: underline;
 }
 .noticia-text{
    max-height: 0px;
    overflow: hidden;
-   transition: max-height 1s ease-in-out;
+   transition: max-height 0.33s ease;
 }
 .noticia-text:target{
    max-height: 350px;
    background-color: hsl(243, 29%, 36%, 60%);
    border-radius: 0.25rem;
+}
+aside h4{
+   font-size: 1.15rem;
+   margin: 0;
+   padding: 1.15rem;
 }
 
 /*-------------- Contactar ---------------*/
@@ -126,7 +147,7 @@ aside{
    height: 5rem;
 }
 #contactar input[type="submit"]{
-   background-color: #d1010a;
+   background-color: #3498DB;
    color: #eeeeee;
    padding: 0.5rem;
    font-size: 1rem;
@@ -197,7 +218,7 @@ aside{
    margin: 1.5rem 0;
    color: inherit;
    padding: 0.75rem;
-   background-color: #444176;
+   background-color: #3498DB;
    border-radius: 0.75rem;
    transition: 0.2s linear;
    font-size: 1.25rem;
@@ -262,7 +283,7 @@ aside{
    color: #d1010a;
 }
 .buybox button{
-   background-color: yellow;
+   background-color: #3498DB;
    border-radius: 0.75rem;
    border: none;
    font-size: 1rem;
